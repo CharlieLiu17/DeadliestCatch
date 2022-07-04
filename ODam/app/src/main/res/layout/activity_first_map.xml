@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstMapActivity">
+
+    <ImageView
+        android:id="@+id/lakeMonumentImage"
+        android:layout_width="78dp"
+        android:layout_height="27dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:srcCompat="@drawable/lake_monument"
+        tools:layout_editor_absoluteX="506dp"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/mapImage"
+        android:layout_width="907dp"
+        android:layout_height="499dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.538"
+        app:srcCompat="@drawable/mapver2" />
+
+    <Button
+        android:id="@+id/fisherButton"
+        android:layout_width="72dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="52dp"
+        android:text="Fisher"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.921"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/towerInfo" />
+
+    <Button
+        android:id="@+id/startCombatButton"
+        android:layout_width="135dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#87E10A"
+        android:text="Start Combat"
+        app:layout_constraintBottom_toTopOf="@+id/fisherButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.988"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/towerInfo"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/Spearman"
+        android:layout_width="96dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="8dp"
+        android:text="Spearer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.939"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fisherButton" />
+
+    <Button
+        android:id="@+id/Boatman"
+        android:layout_width="80dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="32dp"
+        android:text="Boater"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.931"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Spearman"
+        app:layout_constraintVertical_bias="0.095" />
+
+    <Button
+        android:id="@+id/upgradeButton"
+        android:layout_width="107dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#FF7F1F"
+        android:text="UPGRADE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.961"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Boatman" />
+
+    <TextView
+        android:id="@+id/lakeHealthText"
+        android:layout_width="92dp"
+        android:layout_height="22dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="328dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="Lake HP: 0"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/moneyText"
+        android:layout_width="127dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="Money: 0"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/selectedFish"
+        android:layout_width="143dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="0dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="Chosen Fish HP: 0"
+        android:textAlignment="textStart"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/lakeHealthText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.482" />
+
+    <TextView
+        android:id="@+id/towerInfo"
+        android:layout_width="124dp"
+        android:layout_height="87dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/archivo_black"
+        android:text="Buy:"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lakeHealthText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
